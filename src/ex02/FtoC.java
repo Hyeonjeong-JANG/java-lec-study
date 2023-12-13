@@ -31,7 +31,7 @@ public class FtoC {
         if(k == 1){
             System.out.println("섭씨 온도를 입력해 주세요.");
             double c_temp = sc.nextDouble();
-            double f_temp = c_temp * 9 /5 +32;
+            double f_temp = c_temp * 9.0 / 5.0 + 32.0;
             System.out.println("섭씨 "+ c_temp+"도는 화씨로 "+f_temp+"도입니다.");
         } else if(k==2){
             System.out.println("화씨 온도를 입력해 주세요.");
