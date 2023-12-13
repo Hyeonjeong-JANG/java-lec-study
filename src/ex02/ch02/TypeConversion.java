@@ -1,4 +1,4 @@
-package ch02;public class TypeConversion {
+package ex02.ch02;public class TypeConversion {
     public static void main(String[] args) {
         int i;
         double f;
