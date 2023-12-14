@@ -23,9 +23,9 @@ public class Ex04 {
         p = true;
         q = true;
         //기계 만들기
-        boolean and = (p == true) && (q == true) ? true : false;
-        boolean or = (p == true) || (q == true) ? true : false;
-        boolean xor = ((p == true) ^ (q == true)) && ((p == false) ^ (q == false)) ? true : false;
+        boolean and = p && q ? true : false;
+        boolean or = p || q ? true : false;
+        boolean xor = (p ^ q) && (p ^ q) ? true : false;
         System.out.println(p + "\t" + q + "\t" + and + "\t" + or + "\t" + xor);
 
 
@@ -33,9 +33,9 @@ public class Ex04 {
         p = true;
         q = false;
         //기계 만들기
-        and = (p == true) && (q == true) ? true : false;
-        or = (p == true) || (q == true) ? true : false;
-        xor = ((p == true) ^ (q == true)) && ((p == false) ^ (q == false)) ? true : false;
+        and = p && q ? true : false;
+        or = p || q ? true : false;
+        xor = (p ^ q) && (p ^ q) ? true : false;
         System.out.println(p + "\t" + q + "\t" + and + "\t" + or + "\t" + xor);
 //
 //        // p는 false q는 true
@@ -43,9 +43,9 @@ public class Ex04 {
         p = false;
         q = true;
         //기계 만들기
-        and = (p == true) && (q == true) ? true : false;
-        or = (p == true) || (q == true) ? true : false;
-        xor = ((p == true) ^ (q == true)) && ((p == false) ^ (q == false)) ? true : false;
+        and = p && q ? true : false;
+        or = p || q ? true : false;
+        xor = (p ^ q) && (p ^ q) ? true : false;
         System.out.println(p + "\t" + q + "\t" + and + "\t" + or + "\t" + xor);
 //
 //        // p와 q가 모두 false
@@ -53,9 +53,9 @@ public class Ex04 {
         p = false;
         q = false;
         //기계 만들기
-        and = (p == true) && (q == true) ? true : false;
-        or = (p == true) || (q == true) ? true : false;
-        xor = ((p == true) ^ (q == true)) && ((p == false) ^ (q == false)) ? true : false;
+        and = p && q ? true : false;
+        or = p || q ? true : false;
+        xor = (p ^ q) && (p ^ q) ? true : false;
         System.out.println(p + "\t" + q + "\t" + and + "\t" + or + "\t" + xor);
     }
 }
