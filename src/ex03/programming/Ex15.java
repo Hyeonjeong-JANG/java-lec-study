@@ -23,7 +23,10 @@ public class Ex15 {
             random1 = (int) (Math.random() * 3);
             random2 = (int) (Math.random() * 5);
             randomArr[random1][random2] = randomNum;
-            count++;
+
+            if (randomNum == 1) {
+                count++;
+            }
             if (count == 5) {
                 break;
             }
