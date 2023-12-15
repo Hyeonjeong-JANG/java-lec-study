@@ -1,4 +1,4 @@
-package ex03.programming;
+package ex03.programming.programmingTest;
 
 /**
  * 3*5 크기의 2차원 배열을 생성하고 0으로 초기화한다.
