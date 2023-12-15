@@ -23,10 +23,8 @@ public class Ex13 {
         for (int k = 0; k < 5; k++) {
             for (int i = 0; i < Symbol.length; i++) {//4
                 for (int j = 0; j < Card.length; j++) {//13
-                    symRandom = (int) (Math.random() * 4);
-
-                    cardRandom = (int) (Math.random() * 13);
-
+                    symRandom = (int) (Math.random() * Symbol.length);
+                    cardRandom = (int) (Math.random() * Card.length);
                 }
             }
             System.out.println(Symbol[symRandom] + "의 " + Card[cardRandom]);
