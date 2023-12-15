@@ -14,17 +14,15 @@ public class Averager {
             int userScore = sc.nextInt();
 //        System.out.println(userScore);
             count++;
-            System.out.println("몇 명?" + count);
+//            System.out.println("몇 명?" + count);
             sum = sum + userScore;
-            System.out.println("합계?" + sum);
+//            System.out.println("합계?" + sum);
             if (userScore < 0) {
-                sum = sum - userScore;
-                System.out.println("음수를 뺀 합계?" + sum);
-                System.out.println("평균은 " + (sum / (count - 1)));
+                sum = sum - userScore; // 마지막 입력된 값은 음수이기 때문에 -userScore을 해 주어 그 값을 제외시킨다.
+//                System.out.println("음수를 뺀 합계?" + sum);
+                System.out.println("평균은 " + (sum / (count - 1))); // 마지막 입력된 값은 음수이기 때문에 count에 포함시키지 않는다.
                 break;
             }
         }
-
-
     }
 }
