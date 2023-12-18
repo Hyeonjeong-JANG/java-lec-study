@@ -14,7 +14,7 @@ public class BinarySearch {
         final int target = 2;
         int start = 0;
         int end = N - 1; // 21 - 1
-        int mid;
+        int mid; // 찾고자 하는 번지
 
         int round = 1;
         while (true) {
