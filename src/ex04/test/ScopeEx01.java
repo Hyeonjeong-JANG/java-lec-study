@@ -17,8 +17,12 @@ public class ScopeEx01 {
     // 메인 시작 전에 static에 변수 n2와 메서드 m1이 로드되어 있음.
     public static void main(String[] args) {
         System.out.println(1);
-        m1();
+        m1(); // return이 있으면 여기로 오고, 없으면 다음 줄로 간다.
         System.out.println(2);
+        ScopeEx01 sc = new ScopeEx01(); // static이 붙어 있지 않은 모든 것이 뜸. 그냥 남는 공간 찾아서 뜸. // main stack에 뜬 sc는 heap의 주소.(참조 변수)
+        System.out.println(sc.n1);
+        sc.m2();
 
+        // heap과 static은 떠있기만 하다면 어디서든 찾을 수 있어. 어차피 이름은 중복되지 않을테니까.
     }
 }
