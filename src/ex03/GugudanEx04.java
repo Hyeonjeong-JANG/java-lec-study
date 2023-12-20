@@ -1,5 +1,6 @@
 package ex03;
 
+// 구구단 리팩토링
 class GugudanUtil { // 이런 것이 라이브러리!
     static void gugudan(int x) { // 매개 변수는 메서드의 스택에 만들어 진다. 외부에서 찾을 수 없고 gugudan이 실행될 때 생긴다.
         for (int i = 1; i <= 9; i++)
