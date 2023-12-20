@@ -5,6 +5,8 @@ package ex03;
  * 1. 2~9단까지 출력되게 만들기
  */
 public class GugudanEx01 {
+    
+
     public static void main(String[] args) {
 
         // 2단 만들기
