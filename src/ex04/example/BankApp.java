@@ -1,5 +1,3 @@
-// balance는 long 타입이기 때문에 L을 붙임.
-
 package ex04.example;
 
 import ex04.example.model.Account;
@@ -12,7 +10,7 @@ public class BankApp {
         User u2 = new User(2, "cos", "cos@nate.com");
 
         // 계좌 2개 만들기
-        Account a1 = new Account(1111, 1000L, 1);
+        Account a1 = new Account(1111, 1000L, 1); // balance는 long 타입이기 때문에 L을 붙임.
         Account a2 = new Account(2222, 1000L, 2);
 
         // 고객에게 받은 정보
