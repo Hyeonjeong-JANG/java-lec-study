@@ -15,7 +15,7 @@ public class BankApp {
         Account cosAccount = new Account(2222, 10000, 2);
         Account loveAccount = new Account(3333, 10000, 3);
         // 3. 고객에게 정보를 받기(amount)
-        long amount = 1100L;
+        long amount = -1100L;
 
         // 4. 이체(ssar -> cos 1000원)
         BankService.이체(ssarAccount, cosAccount, amount);
