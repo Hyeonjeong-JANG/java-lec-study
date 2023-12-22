@@ -2,7 +2,7 @@ package ex06;
 
 class ShapeParent {
     public void draw() {
-        System.out.println("ShapeParent");
+        System.out.println("Shape 중 하나를 그릴 예정입니다.");
     }
 }
 
