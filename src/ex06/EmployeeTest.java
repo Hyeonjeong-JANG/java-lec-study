@@ -17,7 +17,7 @@ class Employee extends Person {
     String id;
 
     public Employee() {
-        super(); // 이건 안 적어줘도 되나? 아래에 생성자를 만들 때는 자동으로 수퍼가 적히는데 이건 아니여.
+        super(); // super();은 형식적으로라도 해주는 것이 가독성이 올라가고 유지보수할 때 좋음
         System.out.println("Employee");
     }
 
