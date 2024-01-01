@@ -3,51 +3,61 @@ package ex09.ex09.programming;
 import javax.swing.*;
 import java.awt.*;
 
+// 사이즈의 절대값을 어떻게 하는지 좀 더 공부하자.
+// 패딩이나 마진 주는 방법도
 public class Ex04 extends JFrame {
     Ex04() {
-        setSize(500, 300);
+        setSize(500, 200);
         setTitle("JLabel Test");
 
-        setLayout(new GridLayout(0, 5));
         JPanel panel1 = new JPanel();
-        JPanel panel2 = new JPanel();
-        JPanel panel3 = new JPanel();
-        JPanel panel4 = new JPanel();
-//        JPanel panel5 = new JPanel();
         add(panel1);
-        add(panel2);
-        add(panel3);
-        add(panel4);
-//        add(panel5);
-
+        panel1.setSize(500, 50);
+        panel1.setLayout(new GridLayout(0, 5));
         JLabel label1 = new JLabel("Red");
         JLabel label2 = new JLabel("Yellow");
         JLabel label3 = new JLabel("Green");
         JLabel label4 = new JLabel("Blue");
+        label1.setHorizontalAlignment(SwingConstants.CENTER);
+        label2.setHorizontalAlignment(SwingConstants.CENTER);
+        label3.setHorizontalAlignment(SwingConstants.CENTER);
+        label4.setHorizontalAlignment(SwingConstants.CENTER);
+
         panel1.add(label1);
-        panel2.add(label2);
-        panel3.add(label3);
-        panel4.add(label4);
+        panel1.add(label2);
+        panel1.add(label3);
+        panel1.add(label4);
 
-        JButton b1 = new JButton();
-        JButton b2 = new JButton();
-        JButton b3 = new JButton();
-        JButton b4 = new JButton();
+        JPanel panel2 = new JPanel();
+        add(panel2);
+        panel2.setSize(500, 100);
+        panel2.setLayout(new GridLayout(0, 5, 20, 20));
 
-        b1.setBackground(Color.red);
-        b1.setSize(50, 50);
-        b2.setBackground(Color.yellow);
-        b2.setSize(50, 50);
-        b3.setBackground(Color.green);
-        b3.setSize(50, 50);
-        b4.setBackground(Color.blue);
-        b4.setSize(50, 50);
+        JPanel p1 = new JPanel();
+        JPanel p2 = new JPanel();
+        JPanel p3 = new JPanel();
+        JPanel p4 = new JPanel();
 
+//        p1.setPreferredSize(new Dimension(80, 80));
+//        p2.setPreferredSize(new Dimension(80, 80));
+//        p3.setPreferredSize(new Dimension(80, 80));
+//        p4.setPreferredSize(new Dimension(80, 80));
 
-        panel1.add(b1);
-        panel2.add(b2);
-        panel3.add(b3);
-        panel4.add(b4);
+        p1.setBackground(Color.red);
+        p2.setBackground(Color.yellow);
+        p3.setBackground(Color.green);
+        p4.setBackground(Color.blue);
+
+//        p1.setSize(80, 80);
+//        p2.setSize(80, 80);
+//        p3.setSize(80, 80);
+//        p4.setSize(80, 80);
+
+        panel2.add(p1);
+        panel2.add(p2);
+        panel2.add(p3);
+        panel2.add(p4);
+
         setVisible(true);
     }
 

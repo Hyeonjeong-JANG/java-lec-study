@@ -20,7 +20,7 @@ public class Ex02 extends JFrame {
 
         JButton button = new JButton("증가");
         panel.add(button);
-
+        
         setVisible(true);
     }
 
