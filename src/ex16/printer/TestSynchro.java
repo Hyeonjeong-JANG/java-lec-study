@@ -1,4 +1,4 @@
-package ex13.printer;
+package ex16.printer;
 
 class Printer {
     synchronized void print(int[] arr) {

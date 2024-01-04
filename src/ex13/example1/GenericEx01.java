@@ -1,6 +1,6 @@
 package ex13.example1;
 
-// 데이터의 값의 타입을 정확히 알지 못할 때가 있다.
+// 데이터의 타입을 정확히 알지 못할 때가 있다.
 class Box<T> {
     T data;
 }

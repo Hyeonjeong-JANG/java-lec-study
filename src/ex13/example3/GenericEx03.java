@@ -28,6 +28,7 @@ public class GenericEx03 {
         arr[0] = new Dog();
         arr[1] = new Cat();
 
+        // 오브젝트로 만들었을 때 단점: 다운캐스팅 해야한다.(귀찮음)
         Animal d1 = (Dog) arr[0]; // [-> Object, Dog]
         Animal c1 = (Cat) arr[1]; // [-> Object, Cat]
 
