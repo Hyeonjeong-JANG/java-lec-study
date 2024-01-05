@@ -1,4 +1,4 @@
-package coffeeApp;
+package coffeeapp;
 
 import java.util.List;
 
@@ -73,6 +73,6 @@ class Coffee {
 public class CoffeeApp {
     public static void main(String[] args) {
         Customer c1 = new Customer();
-        
+
     }
 }
