@@ -16,7 +16,7 @@ public class CopyEx01 {
 
         System.out.println(list.size());
         System.out.println(newList.size());
-
+    
         list.add(5);
 
         System.out.println(list.size());
