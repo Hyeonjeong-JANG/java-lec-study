@@ -11,7 +11,7 @@ import java.nio.charset.StandardCharsets;
 public class Server {
     public static void main(String[] args) {
         try {
-            // 데이터가 컴퓨터까지 도착하는 것은 IP를 통해서지만 카톡인지 네이트온인지 알 수 있는 것은 포트 번호 때문이다. 그게 위에 적힌 10000
+            // 데이터가 컴퓨터까지 도착하는 것은 IP를 통해서지만 카톡인지 네이트온인지 알 수 있는 것은 포트 번호 때문이다. 그게 아래에 적힌 10000
             ServerSocket serverSocket = new ServerSocket(10000);
             System.out.println("ServerSocket 연결됨");
             Socket socket = serverSocket.accept(); // 누가 나에게 요청하는지를 확인하는 리스너
