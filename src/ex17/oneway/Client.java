@@ -11,7 +11,7 @@ public class Client {
     public static void main(String[] args) {
         try {
             // localhost = 127.0.0.1(루프백)
-            Socket socket = new Socket("127.0.0.1", 10000); // 이 소켓이 버퍼드 라이터의 타겟이 되는 것이다.
+            Socket socket = new Socket("192.168.0.44", 20000); // 이 소켓이 버퍼드 라이터의 타겟이 되는 것이다.
 //            Scanner sc = new Scanner(System.in);
 //            String msg = sc.nextLine();
             String msg1 = "ㅎ후후";
@@ -22,7 +22,7 @@ public class Client {
             // 버퍼드리더한테 나 인코딩이 유티에프8이야. 그렇게 끊어 읽어. 라고 말해주는 것이다. 오에스한테도 그렇게 말하는 것이다.
 
             bw.write(msg1 + "\n");
-            bw.write(msg2);
+            bw.write(msg2 + "\n");
             bw.flush();
         } catch (IOException e) {
             e.printStackTrace();
