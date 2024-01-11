@@ -21,6 +21,5 @@ public class SocketTest {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
     }
 }
