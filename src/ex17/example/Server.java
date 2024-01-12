@@ -33,7 +33,7 @@ public class Server {
                 System.out.println("클라이언트로 보낼 문자열을 입력하고 엔터키를 치세요: ");
                 String omsg = sc.nextLine();
                 out.write(omsg + "\n");
-
+                //out.flush();
             }
             out.close();
             clientSocket.close();
